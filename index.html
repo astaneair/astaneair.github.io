@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#081f3e">
+  <title>Astane | A different way to travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topline">A warmer welcome, wherever you're going <span> · </span> <a href="#experience">Discover Astane</a></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Astane home">
+      <img src="assets/astane-logo.jpeg" alt="Astane">
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <nav id="mainNav">
+      <a href="#book">Book</a><a href="#manage">Manage booking</a><a href="#destinations">Destinations</a><a href="#experience">The Astane experience</a><a href="#about">About us</a>
+    </nav>
+    <div class="header-actions"><button class="text-button" id="helpBtn">Help</button><button class="language">EN <span>⌄</span></button><button class="sign-in" id="signInBtn">Sign in</button></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-copy">
+        <p class="eyebrow light">THE WORLD, A LITTLE CLOSER</p>
+        <h1>Go further.<br><em>Feel at home.</em></h1>
+        <p>Thoughtful journeys from Riyadh to the places that matter.</p>
+      </div>
+      <div class="booking-wrap" id="book">
+        <div class="booking-tabs"><button class="active" data-tab="flights">Flights</button><button data-tab="manage">Manage booking</button><button data-tab="checkin">Check-in</button></div>
+        <div id="bookingPanel">
+          <div class="trip-options"><label><input type="radio" name="trip" value="round" checked> Return</label><label><input type="radio" name="trip" value="one"> One way</label></div>
+          <div class="search-grid">
+            <label class="field"><span>From</span><select id="origin"><option value="RUH">Riyadh · RUH</option><option value="JED">Jeddah · JED</option><option value="DMM">Dammam · DMM</option><option value="MED">Madinah · MED</option></select></label>
+            <button class="swap" id="swap" aria-label="Swap airports">⇄</button>
+            <label class="field"><span>To</span><select id="destination"><option value="LHR">London · LHR</option><option value="DXB">Dubai · DXB</option><option value="CAI">Cairo · CAI</option><option value="IST">Istanbul · IST</option><option value="BKK">Bangkok · BKK</option><option value="CDG">Paris · CDG</option><option value="JFK">New York · JFK</option><option value="SIN">Singapore · SIN</option><option value="JED">Jeddah · JED</option><option value="DMM">Dammam · DMM</option></select></label>
+            <label class="field"><span>Departure</span><input id="departDate" type="date"></label>
+            <label class="field return-field"><span>Return</span><input id="returnDate" type="date"></label>
+            <label class="field"><span>Passengers</span><select id="passengers"><option value="1">1 passenger</option><option value="2">2 passengers</option><option value="3">3 passengers</option><option value="4">4 passengers</option><option value="5">5 passengers</option><option value="6">6 passengers</option><option value="7">7 passengers</option><option value="8">8 passengers</option><option value="9">9 passengers</option></select></label>
+            <label class="field"><span>Cabin</span><select id="cabin"><option value="Economy">Economy</option><option value="Business">Business</option><option value="First">First</option></select></label>
+          </div>
+          <div class="booking-bottom"><span class="small-note">Prices shown in Saudi riyals (SAR), including taxes and carrier charges.</span><button class="gold-button" id="searchFlights">Search flights <span>→</span></button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section offers" id="destinations">
+      <div class="section-heading"><div><p class="eyebrow">YOUR NEXT CHAPTER</p><h2>Somewhere worth going.</h2></div><a href="#book" class="arrow-link">Explore all destinations <span>↗</span></a></div>
+      <div class="destination-grid">
+        <article class="destination-card destination-london"><div><span class="destination-tag">CITY BREAK</span><h3>London</h3><p>From SAR 2,190 return</p></div></article>
+        <article class="destination-card destination-dubai"><div><span class="destination-tag">A SHORT ESCAPE</span><h3>Dubai</h3><p>From SAR 690 return</p></div></article>
+        <article class="destination-card destination-bangkok"><div><span class="destination-tag">SOMETHING DIFFERENT</span><h3>Bangkok</h3><p>From SAR 1,780 return</p></div></article>
+      </div>
+      <p class="disclaimer">Fares are indicative, per person, based on recent availability and may change at the time of booking.</p>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="experience-photo"><img src="assets/astane-a350.jpeg" alt="Astane widebody aircraft in its white and champagne livery"></div>
+      <div class="experience-copy"><p class="eyebrow">THE ASTANE DIFFERENCE</p><h2>Considered in every detail.</h2><p>From a calm cabin to the small gestures that make a long journey feel shorter, we believe the best service is the kind that feels effortless.</p><a class="arrow-link" href="#about">Discover our approach <span>↗</span></a></div>
+    </section>
+
+    <section class="fleet-section">
+      <div class="fleet-intro"><p class="eyebrow">OUR FLEET</p><h2>Made for the journey ahead.</h2><p>A modern fleet connecting Saudi Arabia with key cities across the world.</p></div>
+      <div class="fleet-list">
+        <div class="fleet-item"><div class="fleet-number">57</div><div><h3>Airbus A321neo</h3><p>Efficient comfort for regional and medium-haul journeys.</p></div><span>Single-aisle</span></div>
+        <div class="fleet-item"><div class="fleet-number">36</div><div><h3>Airbus A350-1000</h3><p>Quiet, spacious cabins for long-haul travel.</p></div><span>Widebody</span></div>
+        <div class="fleet-item"><div class="fleet-number">25</div><div><h3>Boeing 787-9</h3><p>Thoughtful details and a smoother long-haul experience.</p></div><span>Widebody</span></div>
+      </div>
+    </section>
+
+    <section class="about-band" id="about">
+      <div class="about-content"><p class="eyebrow light">ROOTED IN RIYADH</p><h2>Our home is your starting point.</h2><p>Astane is a Saudi airline based in Riyadh, bringing people and places closer through considered service and a growing international network.</p><div class="about-facts"><div><strong>RUH</strong><span>Our hub</span></div><div><strong>118</strong><span>Aircraft in fleet</span></div><div><strong>2026</strong><span>Our story continues</span></div></div></div>
+      <img src="assets/astane-787.jpeg" alt="Astane Boeing 787 aircraft">
+    </section>
+
+    <section class="info-section">
+      <div><p class="eyebrow">TRAVEL WITH CONFIDENCE</p><h2>Here when you need us.</h2></div>
+      <div class="info-cards"><article><span>01</span><h3>Before you fly</h3><p>Find guidance on baggage, travel documents, special assistance and airport arrival times.</p><a href="#help" class="arrow-link">Travel information ↗</a></article><article><span>02</span><h3>After you book</h3><p>Review your itinerary, add services and keep your trip details close at hand.</p><a href="#manage" class="arrow-link">Manage your trip ↗</a></article><article><span>03</span><h3>Need a hand?</h3><p>Our support team can help with changes, questions and travel arrangements.</p><a href="#help" class="arrow-link">Contact Astane ↗</a></article></div>
+    </section>
+  </main>
+
+  <footer id="help"><div class="footer-top"><img src="assets/astane-logo.jpeg" alt="Astane"><p>Travel, thoughtfully.</p><div><a href="#about">About Astane</a><a href="#experience">Our experience</a><a href="#book">Book a flight</a><a href="mailto:care@astane.sa">Contact</a></div></div><div class="footer-bottom"><span>© 2026 Astane Airlines. All rights reserved.</span><span>Saudi Arabia · English · SAR</span></div></footer>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close">×</button><div id="modalContent"></div></section>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
